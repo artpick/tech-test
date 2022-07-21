@@ -1,20 +1,25 @@
 package com.julian.sabos;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
+        // GIVEN
+        final App app = new App();
+
+        // WHEN
+        app.initBand();
+
+        // THEN
+        assertThat(App.BANDS).isNotNull().hasSize(2);
+
     }
 }

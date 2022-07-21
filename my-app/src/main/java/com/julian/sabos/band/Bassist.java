@@ -1,0 +1,13 @@
+package com.julian.sabos.band;
+
+public class Bassist extends Musician {
+    @Override
+    public String toString() {
+        return "\tBassist\n" +
+                "\t\t- surname : '" + surname + "'\n" +
+                "\t\t- name : '" + name + "'\n" +
+                "\t\t- first name : '" + firstName + "'\n" +
+                "\t\t- birth : " + birth + "'\n" +
+                ((death != null) ? "\t\t- death : " + death + "'\n" : "");
+    }
+}
