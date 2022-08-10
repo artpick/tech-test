@@ -12,10 +12,11 @@ import java.time.Month;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Set;
 
 public class App {
 
-    public static final Collection<Band> BANDS = Collections.emptySet();
+    public static final Set<Band> BANDS = Collections.emptySet();
 
     public static void main(String[] args) {
         System.out.println("We will be creating band.");
